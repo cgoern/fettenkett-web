@@ -1,0 +1,49 @@
+/**
+ * ==========================================================================
+ * Custom properties
+ * ==========================================================================
+ */
+
+:root {
+	/**
+	 * ==========================================================================
+	 * calt - Contextual Alternates
+	 * liga - Ligatures
+	 * ss07 - Square punctuation
+	 * ss08 - Square quotes
+	 * cv01 - Alternate one
+	 * cv05 - Lower-case L with tail
+	 * cv06 - Simplified u
+	 * cv07 - Alternate German double s
+	 * cv10 - Capital G with spur
+	 * zero - Slashed Zero
+	 * ==========================================================================
+	 */
+
+	--typography-font-family: 'InterVariable', sans-serif;
+	--typography-font-feature-settings: 'calt' 1, 'liga' 1, 'ss07' 1, 'ss08' 1, 'cv01' 1, 'cv05' 1,
+		'cv06' 1, 'cv07' 1, 'cv10' 1, 'zero' 1;
+	--typography-letter-spacing: calc((12px - 1em) * 0.03);
+}
+
+/**
+ * ==========================================================================
+ * Font faces
+ * ==========================================================================
+ */
+
+@font-face {
+	font-display: swap;
+	font-family: 'InterVariable';
+	font-style: normal;
+	font-weight: 100 900;
+	src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'InterVariable';
+	font-style: italic;
+	font-weight: 100 900;
+	src: url('/fonts/InterVariable-Italic.woff2') format('woff2');
+}

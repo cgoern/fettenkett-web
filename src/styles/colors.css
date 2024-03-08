@@ -1,0 +1,64 @@
+/**
+ * ==========================================================================
+ * Custom properties
+ * ==========================================================================
+ */
+
+:root {
+	/**
+	 * ==========================================================================
+	 * surface-primary - surface-secondary: 1.1
+	 * foreground-primary - surface-primary: 16
+	 * foreground-secondary - surface-primary: 6
+	 * outline - surface-primary: 1.2
+	 * ==========================================================================
+	 */
+
+	--color-surface-primary: oklch(96% 0 0);
+	--color-surface-secondary: oklch(100% 0 0);
+	--color-foreground-primary: oklch(20% 0 0);
+	--color-foreground-secondary: oklch(47% 0 0);
+	--color-outline: oklch(90% 0 0);
+}
+
+@media (color-gamut: p3) {
+	:root {
+		--color-surface-primary: color(display-p3 0.949 0.949 0.949);
+		--color-surface-secondary: color(display-p3 1 1 1);
+		--color-foreground-primary: color(display-p3 0.086 0.086 0.086);
+		--color-foreground-secondary: color(display-p3 0.357 0.357 0.357);
+		--color-outline: color(display-p3 0.871 0.871 0.871);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/**
+		 * ==========================================================================
+		 * surface-primary - surface-secondary: 1.1
+		 * foreground-primary - surface-secondary: 16
+		 * foreground-secondary - surface-secondary: 6
+		 * outline - surface-secondary: 1.2
+		 * ==========================================================================
+		 */
+
+		--color-surface-primary: oklch(19% 0 0);
+		--color-surface-secondary: oklch(24% 0 0);
+		--color-foreground-primary: oklch(100% 0 0);
+		--color-foreground-secondary: oklch(70% 0 0);
+		--color-outline: oklch(30% 0 0);
+		--color-main-solid: oklch(61% 0.199 38);
+		--color-on-main-solid: oklch(0% 0 0);
+		--color-main-text: oklch(67% 0.219 38);
+	}
+}
+
+@media (prefers-color-scheme: dark) and (color-gamut: p3) {
+	:root {
+		--color-surface-primary: color(display-p3 0.078 0.078 0.078);
+		--color-surface-secondary: color(display-p3 0.122 0.122 0.122);
+		--color-foreground-primary: color(display-p3 1 1 1);
+		--color-foreground-secondary: color(display-p3 0.62 0.62 0.62);
+		--color-outline: color(display-p3 0.18 0.18 0.18);
+	}
+}
