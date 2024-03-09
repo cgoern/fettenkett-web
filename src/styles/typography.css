@@ -23,7 +23,7 @@
 	--typography-font-family: 'InterVariable', sans-serif;
 	--typography-font-feature-settings: 'calt' 1, 'liga' 1, 'ss07' 1, 'ss08' 1, 'cv01' 1, 'cv05' 1,
 		'cv06' 1, 'cv07' 1, 'cv10' 1, 'zero' 1;
-	--typography-letter-spacing: calc((12px - 1em) * 0.03);
+	--typography-letter-spacing: calc((0.75rem - 1em) * 0.04);
 }
 
 /**

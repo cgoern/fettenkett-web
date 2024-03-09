@@ -7,7 +7,6 @@
 :root {
 	font-family: var(--typography-font-family);
 	font-feature-settings: var(--typography-font-feature-settings);
-	letter-spacing: var(--typography-letter-spacing);
 	font-optical-sizing: auto;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -17,6 +16,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
+	letter-spacing: var(--typography-letter-spacing);
 }
 
 html {
