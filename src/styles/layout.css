@@ -1,0 +1,15 @@
+/**
+ * ==========================================================================
+ * Custom properties
+ * ==========================================================================
+ */
+
+:root {
+	--layout-spacing-minus-3: 0.25rem;
+	--layout-spacing-minus-2: 0.375rem;
+	--layout-spacing-minus-1: 0.625rem;
+	--layout-spacing-0: 1rem;
+	--layout-spacing-plus-1: 1.625rem;
+	--layout-spacing-plus-2: 2.625rem;
+	--layout-spacing-plus-3: 4.25rem;
+}

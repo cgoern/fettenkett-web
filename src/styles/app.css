@@ -5,9 +5,6 @@
  */
 
 :root {
-	font-family: var(--typography-font-family);
-	font-feature-settings: var(--typography-font-feature-settings);
-	font-optical-sizing: auto;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: none;
@@ -16,7 +13,6 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	letter-spacing: var(--typography-letter-spacing);
 }
 
 html {
@@ -27,4 +23,6 @@ body {
 	min-height: 100%;
 	background: var(--color-surface-primary);
 	color: var(--color-foreground-primary);
+	display: flex;
+	flex-direction: column;
 }

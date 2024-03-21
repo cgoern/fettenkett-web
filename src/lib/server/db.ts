@@ -1,19 +1,24 @@
-import { PrismaClient, type Bike, type User } from '@prisma/client'
+import { PrismaClient, type Bike, type User, type Prisma } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-export async function userExists(id: number): Promise<User | null> {
-	const user = await prisma.user.findUnique({
+type UserWithBikes = Prisma.UserGetPayload<{
+	include: { bikes: true }
+}>
+
+export async function getUser(id: number): Promise<UserWithBikes | null> {
+	return await prisma.user.findUnique({
 		where: {
 			id: id,
 		},
+		include: {
+			bikes: true,
+		},
 	})
-
-	return user
 }
 
 export async function createUser(id: number, bikes: Bike[]): Promise<User> {
-	const user = await prisma.user.create({
+	return await prisma.user.create({
 		data: {
 			id: id,
 			bikes: {
@@ -21,6 +26,4 @@ export async function createUser(id: number, bikes: Bike[]): Promise<User> {
 			},
 		},
 	})
-
-	return user
 }

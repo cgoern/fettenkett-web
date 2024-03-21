@@ -8,7 +8,9 @@ export const load: PageServerLoad = async (event) => {
 	if (session?.user && session.user.id) {
 		const userExists = await db.getUser(parseInt(session.user.id))
 
-		if (!userExists) {
+		if (userExists) {
+			throw redirect(303, '/app/dashboard')
+		} else {
 			throw redirect(303, '/app/register')
 		}
 	}

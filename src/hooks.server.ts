@@ -2,7 +2,7 @@ import { redirect, type Handle } from '@sveltejs/kit'
 import { sequence } from '@sveltejs/kit/hooks'
 import { handle as authenticationHandle } from './auth'
 
-async function authorizationHandle({ event, resolve }) {
+async function authorizationHandle({ event, resolve }: { event: any; resolve: any }) {
 	if (event.url.pathname.startsWith('/app')) {
 		const session = await event.locals.auth()
 
