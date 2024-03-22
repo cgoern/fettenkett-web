@@ -126,8 +126,8 @@
 		--button-background: var(--color-strava-solid);
 		--button-color: var(--color-on-strava-solid);
 		--button-overlay-background: oklch(var(--color-strava-solid-oklch) / 25%);
-		--button-before-gradient: oklch(var(--color-strava-solid-oklch) / 25%),
-			oklch(var(--color-strava-solid-oklch) / 50%);
+		--button-before-gradient: oklch(var(--color-strava-solid-oklch) / 35%),
+			oklch(var(--color-strava-solid-oklch) / 70%);
 		--button-box-shadow-color-1: var(--color-black-10);
 		--button-box-shadow-color-2: var(--color-black-10);
 	}
@@ -164,8 +164,8 @@
 
 		.strava {
 			--button-overlay-background: oklch(var(--color-strava-solid-oklch) / 35%);
-			--button-before-gradient: oklch(var(--color-strava-solid-oklch) / 70%),
-				oklch(var(--color-strava-solid-oklch) / 35%);
+			--button-before-gradient: oklch(var(--color-strava-solid-oklch) / 80%),
+				oklch(var(--color-strava-solid-oklch) / 40%);
 			--button-box-shadow-color-1: var(--color-black-80);
 			--button-box-shadow-color-2: var(--color-black-80);
 		}
