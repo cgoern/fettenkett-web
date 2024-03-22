@@ -92,15 +92,12 @@
 		--color-shade: color(display-p3 0 0 0 / 5%);
 
 		--color-main-solid: color(display-p3 1 0.769 0.165);
-		--color-main-solid-p3: 1 0.769 0.165;
 		--color-on-main-solid: color(display-p3 0.086 0.055 0);
 
 		--color-strava-solid: color(display-p3 0.992 0.325 0.027);
-		--color-strava-solid-p3: 0.992 0.325 0.027;
 		--color-on-strava-solid: color(display-p3 1 1 1);
 
 		--color-gray-solid: color(display-p3 0.894 0.894 0.894);
-		--color-gray-solid-p3: 0.894 0.894 0.894;
 		--color-on-gray-solid: color(display-p3 0.086 0.086 0.086);
 
 		--color-white-5: color(display-p3 1 1 1/5%);
@@ -186,7 +183,6 @@
 		--color-shade: color(display-p3 1 1 1 / 8%);
 
 		--color-gray-solid: color(display-p3 0.208 0.208 0.208);
-		--color-gray-solid-p3: 0.208 0.208 0.208;
 		--color-on-gray-solid: color(display-p3 1 1 1);
 	}
 }

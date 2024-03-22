@@ -148,26 +148,6 @@
 		--button-gap: var(--layout-spacing-minus-2);
 	}
 
-	@media (color-gamut: p3) {
-		.main {
-			--button-overlay-background: color(display-p3 var(--color-main-solid-p3) / 25%);
-			--button-before-gradient: color(display-p3 var(--color-main-solid-p3) / 15%),
-				color(display-p3 var(--color-main-solid-p3) / 30%);
-		}
-
-		.strava {
-			--button-overlay-background: color(display-p3 var(--color-strava-solid-p3) / 25%);
-			--button-before-gradient: color(display-p3 var(--color-strava-solid-p3) / 35%),
-				color(display-p3 var(--color-strava-solid-p3) / 70%);
-		}
-
-		.base {
-			--button-overlay-background: color(display-p3 var(--color-gray-solid-p3) / 25%);
-			--button-before-gradient: color(display-p3 var(--color-gray-solid-p3) / 35%),
-				color(display-p3 var(--color-gray-solid-p3) / 70%);
-		}
-	}
-
 	@media (prefers-color-scheme: dark) {
 		.button {
 			--button-before-mix-blend-mode: screen;
@@ -196,26 +176,6 @@
 				oklch(var(--color-gray-solid-oklch) / 20%);
 			--button-box-shadow-color-1: var(--color-black-80);
 			--button-box-shadow-color-2: var(--color-black-80);
-		}
-	}
-
-	@media (prefers-color-scheme: dark) and (color-gamut: p3) {
-		.main {
-			--button-overlay-background: color(display-p3 var(--color-main-solid-p3) / 35%);
-			--button-before-gradient: color(display-p3 var(--color-main-solid-p3) / 50%),
-				color(display-p3 var(--color-main-solid-p3) / 25%);
-		}
-
-		.strava {
-			--button-overlay-background: color(display-p3 var(--color-strava-solid-p3) / 35%);
-			--button-before-gradient: color(display-p3 var(--color-strava-solid-p3) / 70%),
-				color(display-p3 var(--color-strava-solid-p3) / 35%);
-		}
-
-		.base {
-			--button-overlay-background: color(display-p3 var(--color-gray-solid-p3) / 15%);
-			--button-before-gradient: color(display-p3 var(--color-gray-solid-p3) / 40%),
-				color(display-p3 var(--color-gray-solid-p3) / 20%);
 		}
 	}
 </style>
