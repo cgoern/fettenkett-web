@@ -6,11 +6,19 @@
 	export let iconLeading: ButtonIcon = undefined
 	export let iconTrailing: ButtonIcon = undefined
 	export let theme: ButtonTheme = 'base'
-	export let disabled: boolean = false
 	export let small: boolean = false
+	export let tag: string = 'button'
 </script>
 
-<button on:click class={`button ${theme}`} class:small {disabled} {...$$restProps}>
+<svelte:element
+	this={tag}
+	on:click
+	class={`button ${theme}`}
+	class:small
+	{...$$restProps}
+	role="button"
+	tabindex="0"
+>
 	<div class="overlay"></div>
 	{#if iconLeading}
 		<Icon name={iconLeading} />
@@ -21,7 +29,7 @@
 	{#if iconTrailing}
 		<Icon name={iconTrailing} />
 	{/if}
-</button>
+</svelte:element>
 
 <style>
 	.button {

@@ -65,9 +65,7 @@
 									{bike.name}
 								</Checkbox>
 								<div class="thumbnail">
-									<label class="upload" for={`image-${bike.id}`}>
-										<Text level="-1" weight="+1">Select Image</Text>
-									</label>
+									<Button tag="label" for={`image-${bike.id}`} small>Select Image</Button>
 									<input
 										type="file"
 										name="image"
@@ -148,24 +146,6 @@
 		align-items: center;
 		gap: var(--layout-spacing-minus-2);
 		padding: 0 var(--layout-spacing-minus-2) 0 0;
-	}
-
-	.upload {
-		--text-cursor: var(--register-upload-cursor, pointer);
-
-		cursor: var(--register-upload-cursor, pointer);
-		display: block;
-		padding: var(--layout-spacing-minus-1);
-		border-radius: var(--decoration-corner-0);
-		background: var(--register-upload-background, var(--color-shade));
-		color: var(--register-upload-color, var(--color-foreground-primary));
-		box-shadow: inset 0 0 0 1px var(--color-outline);
-
-		&:has(+ input[type='file']:disabled) {
-			--register-upload-cursor: default;
-			--register-upload-color: var(--color-foreground-quaternary);
-			--register-upload-background: transparent;
-		}
 	}
 
 	input[type='file'] {
