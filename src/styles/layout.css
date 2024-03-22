@@ -13,3 +13,15 @@
 	--layout-spacing-plus-2: 2.625rem;
 	--layout-spacing-plus-3: 4.25rem;
 }
+
+@media (pointer: coarse) {
+	:root {
+		--layout-spacing-minus-3: 0.25rem;
+		--layout-spacing-minus-2: 0.5rem;
+		--layout-spacing-minus-1: 0.75rem;
+		--layout-spacing-0: 1.25rem;
+		--layout-spacing-plus-1: 2rem;
+		--layout-spacing-plus-2: 3.25rem;
+		--layout-spacing-plus-3: 5.25rem;
+	}
+}

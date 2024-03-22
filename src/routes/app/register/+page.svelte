@@ -14,7 +14,7 @@
 		id: bike.id,
 		name: bike.name,
 		distance: bike.distance,
-		checked: false,
+		checked: true,
 		thumbnail: '',
 	}))
 

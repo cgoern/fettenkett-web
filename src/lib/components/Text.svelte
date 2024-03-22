@@ -61,6 +61,11 @@
 		--text-font-weight: var(--typography-font-weight-plus-3);
 	}
 
+	.text[data-level='-2'] {
+		--text-font-size: var(--typography-font-size-minus-2);
+		--text-line-height: var(--typography-line-height-minus-2);
+	}
+
 	.text[data-level='-1'] {
 		--text-font-size: var(--typography-font-size-minus-1);
 		--text-line-height: var(--typography-line-height-minus-1);

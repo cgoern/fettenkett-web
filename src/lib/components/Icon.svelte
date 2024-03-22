@@ -12,7 +12,7 @@
 
 <style>
 	.icon {
-		font-size: var(--typography-font-size-minus-1);
+		font-size: var(--icon-font-size, var(--typography-font-size-minus-1));
 		font-family: var(--typography-font-family);
 		align-items: center;
 		display: flex;
