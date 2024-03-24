@@ -25,5 +25,4 @@ body {
 	color: var(--color-foreground-primary);
 	display: flex;
 	flex-direction: column;
-	padding: var(--typography-font-size-0);
 }

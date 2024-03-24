@@ -132,6 +132,16 @@
 		--button-box-shadow-color-2: var(--color-black-10);
 	}
 
+	.komoot {
+		--button-background: var(--color-komoot-solid);
+		--button-color: var(--color-on-komoot-solid);
+		--button-overlay-background: oklch(var(--color-komoot-solid-oklch) / 15%);
+		--button-before-gradient: oklch(var(--color-komoot-solid-oklch) / 15%),
+			oklch(var(--color-komoot-solid-oklch) / 30%);
+		--button-box-shadow-color-1: var(--color-black-10);
+		--button-box-shadow-color-2: var(--color-black-10);
+	}
+
 	.base {
 		--button-background: var(--color-gray-solid);
 		--button-color: var(--color-on-gray-solid);
@@ -166,6 +176,14 @@
 			--button-overlay-background: oklch(var(--color-strava-solid-oklch) / 35%);
 			--button-before-gradient: oklch(var(--color-strava-solid-oklch) / 80%),
 				oklch(var(--color-strava-solid-oklch) / 40%);
+			--button-box-shadow-color-1: var(--color-black-80);
+			--button-box-shadow-color-2: var(--color-black-80);
+		}
+
+		.komoot {
+			--button-overlay-background: oklch(var(--color-komoot-solid-oklch) / 25%);
+			--button-before-gradient: oklch(var(--color-komoot-solid-oklch) / 50%),
+				oklch(var(--color-komoot-solid-oklch) / 25%);
 			--button-box-shadow-color-1: var(--color-black-80);
 			--button-box-shadow-color-2: var(--color-black-80);
 		}

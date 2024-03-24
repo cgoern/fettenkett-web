@@ -1,1 +1,1 @@
-export type IconName = 'strava' | 'placeholder' | 'checkmark-on' | 'checkmark-off'
+export type IconName = 'strava' | 'komoot' | 'placeholder' | 'checkmark-on' | 'checkmark-off'

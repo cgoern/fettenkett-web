@@ -12,6 +12,8 @@
 	--layout-spacing-plus-1: 1.625rem;
 	--layout-spacing-plus-2: 2.625rem;
 	--layout-spacing-plus-3: 4.25rem;
+	--layout-spacing-plus-4: 6.875rem;
+	--layout-spacing-plus-5: 11.125rem;
 }
 
 @media (pointer: coarse) {
@@ -23,5 +25,7 @@
 		--layout-spacing-plus-1: 2rem;
 		--layout-spacing-plus-2: 3.25rem;
 		--layout-spacing-plus-3: 5.25rem;
+		--layout-spacing-plus-4: 8.5rem;
+		--layout-spacing-plus-5: 13.75rem;
 	}
 }

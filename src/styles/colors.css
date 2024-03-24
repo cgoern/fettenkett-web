@@ -35,6 +35,10 @@
 	--color-strava-solid-oklch: 67% 0.217 38;
 	--color-on-strava-solid: oklch(100% 0 0);
 
+	--color-komoot-solid: oklch(65% 0.16 131);
+	--color-komoot-solid-oklch: 65% 0.16 131;
+	--color-on-komoot-solid: oklch(100% 0 0);
+
 	--color-gray-solid: oklch(92% 0 0);
 	--color-gray-solid-oklch: 92% 0 0;
 	--color-on-gray-solid: oklch(20% 0 0);
@@ -96,6 +100,9 @@
 
 		--color-strava-solid: color(display-p3 0.992 0.325 0.027);
 		--color-on-strava-solid: color(display-p3 1 1 1);
+
+		--color-komoot-solid: color(display-p3 0.42 0.635 0.153);
+		--color-on-komoot-solid: color(display-p3 1 1 1);
 
 		--color-gray-solid: color(display-p3 0.894 0.894 0.894);
 		--color-on-gray-solid: color(display-p3 0.086 0.086 0.086);

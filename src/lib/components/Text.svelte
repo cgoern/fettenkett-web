@@ -3,10 +3,18 @@
 
 	export let level: TextLevel = undefined
 	export let weight: TextWeight = undefined
+	export let italic: boolean = false
 	export let tag: string = 'div'
 </script>
 
-<svelte:element this={tag} class="text" data-level={level} data-weight={weight} {...$$restProps}>
+<svelte:element
+	this={tag}
+	class="text"
+	class:italic
+	data-level={level}
+	data-weight={weight}
+	{...$$restProps}
+>
 	<span class="inner">
 		<slot />
 	</span>
@@ -22,6 +30,7 @@
 			var(--typography-font-feature-settings)
 		);
 		font-optical-sizing: auto;
+		font-style: var(--text-font-style, normal);
 		line-height: var(--text-line-height, var(--typography-line-height-0));
 		padding-bottom: 1px;
 		padding-top: 1px;
@@ -94,6 +103,15 @@
 	.text[data-level='+4'] {
 		--text-font-size: var(--typography-font-size-plus-4);
 		--text-line-height: var(--typography-line-height-plus-4);
+	}
+
+	.text[data-level='+5'] {
+		--text-font-size: var(--typography-font-size-plus-5);
+		--text-line-height: var(--typography-line-height-plus-5);
+	}
+
+	.italic {
+		--text-font-style: italic;
 	}
 
 	.inner {
