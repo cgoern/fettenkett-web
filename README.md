@@ -1,6 +1,6 @@
 # fettenkett
 
-fettenkett is a web application designed to help cyclists keep track of their bicycle maintenance. By connecting to your Strava account, Fettenkett Web can monitor the distance traveled by your selected bicycle and create maintenance reminders for individually selected parts of the bicycle.
+fettenkett is a web application designed to help cyclists keep track of their bicycle maintenance. By connecting to your Strava account, fettenkett can monitor the distance traveled by your selected bicycle and create maintenance reminders for individually selected parts of the bicycle.
 
 ## Features
 
@@ -10,7 +10,7 @@ fettenkett is a web application designed to help cyclists keep track of their bi
 
 ## Getting Started
 
-To get started with Fettenkett Web, follow these steps:
+To get started with fettenkett, follow these steps:
 
 ### Prerequisites
 
